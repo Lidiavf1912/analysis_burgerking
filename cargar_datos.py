@@ -1,6 +1,6 @@
 import pandas as pd
 
-#CREATE DICTIONARY WITH THE COLUMN NAMES AND THE COLUMN TYPES
+#CREAR DICCIONARIO CON LOS NOMBRES DE LAS COLUMNAS Y SUS TIPOS
 def create_dictio(df):
 
     column_types= {}
@@ -20,7 +20,7 @@ def create_dictio(df):
     return column_types
         
 
-#CREATE TABLES
+#CREAR TABLAS
 def create_table(table_name, column_names_types, cursor):
     """
     Function that receives the name of the table "table_name", 
@@ -33,10 +33,10 @@ def create_table(table_name, column_names_types, cursor):
 
     cursor.execute(f'DROP TABLE IF EXISTS `{table_name}`;\n')
     
-    # Add CREATE TABLE statement
+    # Añadir CREATE TABLE
     query = f'CREATE TABLE `{table_name}`('
 
-    # Add all the columns to the string from the dictionary
+    # Añadir todas las columnas a la cadena desde el diccinario
     for key, value in column_names_types.items():
 
         query += f'{key} {value}, '
@@ -48,10 +48,10 @@ def create_tables(db_structure, dframes, cursor):
     for table, keys in db_structure.items():
         #Read dataframe
         
-        #Create table with dataframe
+        #Crear tabla con dataframe
         create_table(table, create_dictio(dframes[table]), cursor)
         
-        # Check and add primary keys
+        # Revisar y añadir las primary keys
         if 'primary_keys' in keys:
             primary_keys_str = ', '.join([f'`{pk}`' for pk in keys['primary_keys']])
             primary_key_query = f'ALTER TABLE `{table}` ADD PRIMARY KEY ({primary_keys_str});'
@@ -64,16 +64,16 @@ def create_tables(db_structure, dframes, cursor):
                 foreign_key_query = f'ALTER TABLE `{table}` ADD FOREIGN KEY ({foreign_key_str}) REFERENCES {reference_str};'
                 cursor.execute(foreign_key_query)
 
-        #Insert values
+        #Añadir valores
         insert_values(table, dframes[table], cursor)
 
 
-#INSERT VALUES
+#AÑADIR VALORES
 def insert_values(table_name, df, cursor):
 
     column_names = ','.join(df.columns)
 
-    # For each row
+    # Para cada fila
 
     for i in range(df.shape[0]):   
         
