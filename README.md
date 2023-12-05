@@ -6,7 +6,7 @@ En este proyecto se va a llevar a cabo un estudio sobre las ventas de Burger Kin
 1.[Contexto](#Contexto)\
 2.[Fuentes de datos](#Fuentes_de_datos)\
 3.[Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
-4.[Explotación: visualización en PowerBI](#Explotación:visualización_en_PowerBI)\
+4.[Explotacion: visualizacion en PowerBI](#Explotación:visualización_en_PowerBI)
 
 ## 1. Contexto <a name="Contexto"/>
 Burguer King, una cadena internacional perteneciente a la empresa Restaurant Brands
