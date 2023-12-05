@@ -3,10 +3,10 @@
 En este proyecto se va a llevar a cabo un estudio sobre las ventas de Burger King. Este proyecto se desempeña en un proceso completo de los datos. Comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos de caracter relacional con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
 
 ## Indice
-1. [Contexto](#Contexto)\
-2. [Fuentes de datos](#Fuentes_de_datos)\
-3. [Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
-4. [Explotación:visualización en PowerBI](#Explotación:visualización_en_PowerBI)\
+1.[Contexto](#Contexto)\
+2.[Fuentes de datos](#Fuentes_de_datos)\
+3.[Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
+4.[Explotación:visualización en PowerBI](#Explotación:visualización_en_PowerBI)
 
 ## 1. Contexto <a name="Contexto"/>
 Burguer King, una cadena internacional perteneciente a la empresa Restaurant Brands
