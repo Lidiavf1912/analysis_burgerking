@@ -6,7 +6,7 @@ En este proyecto se va a llevar a cabo un estudio sobre las ventas de Burger Kin
 1. [Contexto](#Contexto)\
 2. [Fuentes de datos](#Fuentes_de_datos)\
 3. [Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
-4. [Explotación:visualización en PowerBI](#Explotación:visualización_en_PowerBI)
+4. [Explotación:visualización en PowerBI](#Explotación:visualización_en_PowerBI)\
 
 ## 1. Contexto <a name="Contexto"/>
 Burguer King, una cadena internacional perteneciente a la empresa Restaurant Brands
@@ -36,10 +36,10 @@ adaptabilidad a las preferencias y necesidades de sus clientes.
 ## 2. Fuentes de datos <a name="Fuentes_de_datos"/>
 En este proyecto, se ha decidido crear las fuentes de datos desde 0. Para poder llevarlo a cabo se ha tenido que realizar un estudio previo de la empresa estudiando sus ingresos anuales, la variación de los precios a lo largo de los años, el precio de sus productos, etc.
 
-#### 2.1 Recopilación de precios y productos
+#### 2.1 Recopilación de precios y productos 
 Lo primero que se realizó fue realizar una recopilación de los precios y productos de forma manual en un establecimiento en Madrid. Esto se llevo a cabo de forma manual ya que comprobamos que la variación de precios y productos disponibles en Uber Eats, Glovo e inclusive, su propia página web, divergía mucho en cuanto a lo ofrecido en los establecimientos. 
 
-#### 2.2 Parámetros de dispersión para contextualizar los datos
+#### 2.2 Parámetros de dispersión para contextualizar los datos 
 Para poder llevar a cabo una contextualización de los datos lo primeró que se hizo fue calcular una estacionalidad, tanto anual, como mensual.
 Este proyecto se ha enfocado en realizar un estudio a corto plazo, con lo cual vamos a escoger unicamente los últimos 5 años (de 2018 a 2022). La estacionalidad anual la extraímos de este [link](https://www.statista.com/statistics/266462/burger-king-revenue/) pudiendo adquirir los ingresos anuales mundiales de Burger King en billones de Dólares Estado Unidenses(USD). 
 Por otra parte, para estacionalizar los datos mensualmente, otorgamos unos indices de venta mayores a los meses con mayores ingresos como enero o diciembre y unos indices menores a los meses que tienen menos ventas, por ejemplo los correspondientes a los meses de verano (junio, julio y agosto).
@@ -61,7 +61,7 @@ Una vez preparados ya los dataframes añado las tablas a MySQL. Para poder relac
 - Producto: se ha establecido como primary key id_producto y como foreign key id_categoria_producto.
 - Ventas: en esta tabla unicamente nos encontramos con dos foreign keys las cuales son id_ticket y id_producto.
 En cuanto a las relaciones, han sido one to many todas,aunque se podría considerar que ventas actúa como tabla intermedia (pero hemos incorporado columnas adicionales). 
-Se puede ver el ERD en la imagen siguiente:
+Se puede ver el ERD en la imagen siguiente:![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
 
-## 4. Explotación:visualización en PowerBI <a name="CExplotación:visualización_en_PowerBI"/>
+## 4. Explotación:visualización en PowerBI <a name="Explotación:visualización_en_PowerBI"/>
 
