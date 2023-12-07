@@ -1,6 +1,6 @@
 #  Analysis_burgerking
 
-En este proyecto se va a llevar a cabo un estudio sobre las ventas de Burger King. Este proyecto se desempeña en un proceso completo de los datos. Comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos de caracter relacional con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
+En este proyecto se va a llevar a cabo un estudio estratégico sobre las ventas de Burger King. Se desempeña un proceso completo de los datos comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos estructurada con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
 
 ## Indice
 1.[Contexto](#Contexto)\
