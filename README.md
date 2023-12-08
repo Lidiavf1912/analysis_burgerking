@@ -1,12 +1,13 @@
 #  Analysis_burgerking
-
+![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/logo_burgerking.png)
 En este proyecto se va a llevar a cabo un estudio estratégico sobre las ventas de Burger King. Se desempeña un proceso completo de los datos comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos estructurada con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
 
 ## Indice
 1.[Contexto](#Contexto)\
 2.[Fuentes de datos](#Fuentes_de_datos)\
 3.[Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
-4.[Explotacion: visualizacion en PowerBI](#Explotación:visualización_en_PowerBI)
+4.[Explotacion: visualizacion en PowerBI](#Explotación:visualización_en_PowerBI)\
+5.[Conclusiones y siguientes pasos](#Conclusiones_y_siguientes_pasos)\
 
 ## 1. Contexto <a name="Contexto"/>
 Burguer King, una cadena internacional perteneciente a la empresa Restaurant Brands
@@ -43,7 +44,7 @@ Lo primero que se realizó fue realizar una recopilación de los precios y produ
 Para poder llevar a cabo una contextualización de los datos lo primeró que se hizo fue calcular una estacionalidad, tanto anual, como mensual.
 Este proyecto se ha enfocado en realizar un estudio a corto plazo, con lo cual vamos a escoger unicamente los últimos 5 años (de 2018 a 2022). La estacionalidad anual la extraímos de este [link](https://www.statista.com/statistics/266462/burger-king-revenue/) pudiendo adquirir los ingresos anuales mundiales de Burger King en billones de Dólares Estado Unidenses(USD). 
 Por otra parte, para estacionalizar los datos mensualmente, otorgamos unos indices de venta mayores a los meses con mayores ingresos como enero o diciembre y unos indices menores a los meses que tienen menos ventas, por ejemplo los correspondientes a los meses de verano (junio, julio y agosto).
-Otro punto importante a tener en cuenta son los precios, ya que como bien sabemos, estos últimos años en nuestro país a habido una notable inflación. Así que, para poder adaptar los precios extraídos en 2023 a los años de los que realizamos el estudio, hemos utilizado el Indice Big Mac de la Eurozona extraído de The Economist (el csv utilizado se puede encontrar aquí). 
+Otro punto importante a tener en cuenta son los precios, ya que como bien sabemos, estos últimos años en nuestro país a habido una notable inflación. Así que, para poder adaptar los precios extraídos en 2023 a los años de los que realizamos el estudio, hemos utilizado el Indice Big Mac de la Eurozona extraído de The Economist (el csv utilizado se puede encontrar [aquí](https://github.com/TheEconomist/big-mac-data)). 
 
 ##### 2.3 Realización de dataframes
 Para realizar una base de datos enfocandonos en el departamento de ventas de Burger King. Se ha decidido realizar 5 dataframes:
@@ -64,4 +65,7 @@ En cuanto a las relaciones, han sido one to many todas,aunque se podría conside
 Se puede ver el ERD en la imagen siguiente:![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
 
 ## 4. Explotación:visualización en PowerBI <a name="Explotación:visualización_en_PowerBI"/>
+Para terminar, visualizamos los datos en Power BI. Lo primero que se puede observar es un diccionario de variables en el que se explican las más importantes para poder entender el dashboard. Por otra parte, podemos ver otras 3 hojas. En la hoja de análisis general nos encontramos con un análisis de las ventas a nivel global, pudiendo observar sus categorías, canales, ingresos por año, etc. Ya en el siguiente dashboard, se centra en una categoría (la que desees seleccionar) donde se ven los 10 productos más vendidos de la categoría seleccionada, los ingresos obtenidos en el año que queramos, las cuotas por canales y mucha más información. Para terminar, en el último cuadro de mando nos enfocamos en el producto concreto que queramos consultar para realizar la estrategia, en este podemos ver la evolución que han tenido sus ventas (tanto en uds, como en ingresos y precios).
 
+## 5. Conclusiones y siguientes pasos <a name="Conclusiones_y_siguientes_pasos"/>
+En conclusión, este informe nos ayuda a tomar decisiones estratégicas en cuanto a posibles ofertas y cambios en el precio de los productos. Como posibles siguientes pasos se podrían realizar predicciones con los datos obtenidos (utilizando una muestra de entreno y otra de testeo) y comprobar las estrategias que quisieramos tomar en un futuro con técnicas como el AB Testing. Además, se podría aumentar la base de datos (por ejemplo, con la librería faker se poodría hacer una tabla de clientes que nos serviría para hacer clusterings).
