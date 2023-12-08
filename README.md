@@ -63,7 +63,8 @@ Una vez preparados ya los dataframes añado las tablas a MySQL. Para poder relac
 - Producto: se ha establecido como primary key id_producto y como foreign key id_categoria_producto.
 - Ventas: en esta tabla unicamente nos encontramos con dos foreign keys las cuales son id_ticket y id_producto.
 En cuanto a las relaciones, han sido one to many todas,aunque se podría considerar que ventas actúa como tabla intermedia (pero hemos incorporado columnas adicionales). 
-Se puede ver el ERD en la imagen siguiente:![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
+Se puede ver el ERD en la imagen siguiente: 
+![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
 
 ## 4. Visualización en PowerBI <a name="Visualizacion_en_PowerBI"/>
 Para terminar, visualizamos los datos en Power BI. Lo primero que se puede observar es un diccionario de variables en el que se explican las más importantes para poder entender el dashboard. Por otra parte, podemos ver otras 3 hojas. En la hoja de análisis general nos encontramos con un análisis de las ventas a nivel global, pudiendo observar sus categorías, canales, ingresos por año, etc. Ya en el siguiente dashboard, se centra en una categoría (la que desees seleccionar) donde se ven los 10 productos más vendidos de la categoría seleccionada, los ingresos obtenidos en el año que queramos, las cuotas por canales y mucha más información. Para terminar, en el último cuadro de mando nos enfocamos en el producto concreto que queramos consultar para realizar la estrategia, en este podemos ver la evolución que han tenido sus ventas (tanto en uds, como en ingresos y precios). Puedes encontrar el informe [aquí](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/visualizacion/analisis_burgerking.pbix).
