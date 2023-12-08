@@ -1,13 +1,14 @@
 #  Analysis_burgerking
 ![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/logo_burgerking.png)
+
 En este proyecto se va a llevar a cabo un estudio estratégico sobre las ventas de Burger King. Se desempeña un proceso completo de los datos comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos estructurada con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
 
 ## Indice
 1.[Contexto](#Contexto)\
 2.[Fuentes de datos](#Fuentes_de_datos)\
 3.[Almacenamiento de los datos](#Almacenamiento_de_los_datos)\
-4.[Explotacion: visualizacion en PowerBI](#Explotación:visualización_en_PowerBI)\
-5.[Conclusiones y siguientes pasos](#Conclusiones_y_siguientes_pasos)\
+4.[Visualizacion en PowerBI](#Visualizacion_en_PowerBI)\
+5.[Conclusiones y siguientes pasos](#Conclusiones_y_siguientes_pasos)
 
 ## 1. Contexto <a name="Contexto"/>
 Burguer King, una cadena internacional perteneciente a la empresa Restaurant Brands
@@ -64,8 +65,8 @@ Una vez preparados ya los dataframes añado las tablas a MySQL. Para poder relac
 En cuanto a las relaciones, han sido one to many todas,aunque se podría considerar que ventas actúa como tabla intermedia (pero hemos incorporado columnas adicionales). 
 Se puede ver el ERD en la imagen siguiente:![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
 
-## 4. Explotación:visualización en PowerBI <a name="Explotación:visualización_en_PowerBI"/>
-Para terminar, visualizamos los datos en Power BI. Lo primero que se puede observar es un diccionario de variables en el que se explican las más importantes para poder entender el dashboard. Por otra parte, podemos ver otras 3 hojas. En la hoja de análisis general nos encontramos con un análisis de las ventas a nivel global, pudiendo observar sus categorías, canales, ingresos por año, etc. Ya en el siguiente dashboard, se centra en una categoría (la que desees seleccionar) donde se ven los 10 productos más vendidos de la categoría seleccionada, los ingresos obtenidos en el año que queramos, las cuotas por canales y mucha más información. Para terminar, en el último cuadro de mando nos enfocamos en el producto concreto que queramos consultar para realizar la estrategia, en este podemos ver la evolución que han tenido sus ventas (tanto en uds, como en ingresos y precios).
+## 4. Visualización en PowerBI <a name="Visualizacion_en_PowerBI"/>
+Para terminar, visualizamos los datos en Power BI. Lo primero que se puede observar es un diccionario de variables en el que se explican las más importantes para poder entender el dashboard. Por otra parte, podemos ver otras 3 hojas. En la hoja de análisis general nos encontramos con un análisis de las ventas a nivel global, pudiendo observar sus categorías, canales, ingresos por año, etc. Ya en el siguiente dashboard, se centra en una categoría (la que desees seleccionar) donde se ven los 10 productos más vendidos de la categoría seleccionada, los ingresos obtenidos en el año que queramos, las cuotas por canales y mucha más información. Para terminar, en el último cuadro de mando nos enfocamos en el producto concreto que queramos consultar para realizar la estrategia, en este podemos ver la evolución que han tenido sus ventas (tanto en uds, como en ingresos y precios). Puedes encontrar el informe [aquí](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/visualizacion/analisis_burgerking.pbix).
 
 ## 5. Conclusiones y siguientes pasos <a name="Conclusiones_y_siguientes_pasos"/>
 En conclusión, este informe nos ayuda a tomar decisiones estratégicas en cuanto a posibles ofertas y cambios en el precio de los productos. Como posibles siguientes pasos se podrían realizar predicciones con los datos obtenidos (utilizando una muestra de entreno y otra de testeo) y comprobar las estrategias que quisieramos tomar en un futuro con técnicas como el AB Testing. Además, se podría aumentar la base de datos (por ejemplo, con la librería faker se poodría hacer una tabla de clientes que nos serviría para hacer clusterings).
