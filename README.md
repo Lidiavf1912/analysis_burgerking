@@ -47,9 +47,9 @@ Este proyecto se ha enfocado en realizar un estudio a corto plazo, con lo cual v
 Por otra parte, para estacionalizar los datos mensualmente, otorgamos unos indices de venta mayores a los meses con mayores ingresos como enero o diciembre y unos indices menores a los meses que tienen menos ventas, por ejemplo los correspondientes a los meses de verano (junio, julio y agosto).
 Otro punto importante a tener en cuenta son los precios, ya que como bien sabemos, estos últimos años en nuestro país a habido una notable inflación. Así que, para poder adaptar los precios extraídos en 2023 a los años de los que realizamos el estudio, hemos utilizado el Indice Big Mac de la Eurozona extraído de The Economist (el csv utilizado se puede encontrar [aquí](https://github.com/TheEconomist/big-mac-data)). 
 
-##### 2.3 Realización de dataframes
-Para realizar una base de datos enfocandonos en el departamento de ventas de Burger King. Se ha decidido realizar 5 dataframes:
-- canal_venta: contiene los canales de venta por los que se puede comprar su productos y sus respectivos ids.
+#### 2.3 Realización de dataframes
+Para realizar una base de datos enfocándonos en el departamento de ventas de Burger King. Se ha decidido realizar 5 dataframes:
+- canal_venta: contiene los canales de venta por los que se pueden comprar su productos y sus respectivos ids.
 - tickets: este dataframe tiene los tickets de venta que se han realizado en estos últimos 5 años con sus fechas de emisión.
 - categoría_producto: se enumeran las diferentes categorías de los productos que están a la venta en los estableciemientos con sus respectivos ids.
 - productos: en esta tabla se pueden ver los diferentes productos que venden en los establecimientos y las categorías a las que pertenecen. 
@@ -62,6 +62,7 @@ Una vez preparados ya los dataframes añado las tablas a MySQL. Para poder relac
 - Categoria_producto: la primary key que se ha creado es id_categoria_producto.
 - Producto: se ha establecido como primary key id_producto y como foreign key id_categoria_producto.
 - Ventas: en esta tabla unicamente nos encontramos con dos foreign keys las cuales son id_ticket y id_producto.
+
 En cuanto a las relaciones, han sido one to many todas,aunque se podría considerar que ventas actúa como tabla intermedia (pero hemos incorporado columnas adicionales). 
 Se puede ver el ERD en la imagen siguiente: 
 ![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/esquema_erd.png)
@@ -70,4 +71,4 @@ Se puede ver el ERD en la imagen siguiente:
 Para terminar, visualizamos los datos en Power BI. Lo primero que se puede observar es un diccionario de variables en el que se explican las más importantes para poder entender el dashboard. Por otra parte, podemos ver otras 3 hojas. En la hoja de análisis general nos encontramos con un análisis de las ventas a nivel global, pudiendo observar sus categorías, canales, ingresos por año, etc. Ya en el siguiente dashboard, se centra en una categoría (la que desees seleccionar) donde se ven los 10 productos más vendidos de la categoría seleccionada, los ingresos obtenidos en el año que queramos, las cuotas por canales y mucha más información. Para terminar, en el último cuadro de mando nos enfocamos en el producto concreto que queramos consultar para realizar la estrategia, en este podemos ver la evolución que han tenido sus ventas (tanto en uds, como en ingresos y precios). Puedes encontrar el informe [aquí](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/visualizacion/analisis_burgerking.pbix).
 
 ## 5. Conclusiones y siguientes pasos <a name="Conclusiones_y_siguientes_pasos"/>
-En conclusión, este informe nos ayuda a tomar decisiones estratégicas en cuanto a posibles ofertas y cambios en el precio de los productos. Como posibles siguientes pasos se podrían realizar predicciones con los datos obtenidos (utilizando una muestra de entreno y otra de testeo) y comprobar las estrategias que quisieramos tomar en un futuro con técnicas como el AB Testing. Además, se podría aumentar la base de datos (por ejemplo, con la librería faker se poodría hacer una tabla de clientes que nos serviría para hacer clusterings).
+En conclusión, este informe nos ayuda a tomar decisiones estratégicas de manera informada en cuanto a posibles ofertas y cambios en el precio de los productos. Como posibles siguientes pasos se podrían realizar predicciones con los datos obtenidos (utilizando una muestra de entreno y otra de testeo) y comprobar las estrategias que quisieramos tomar en un futuro con técnicas como el AB Testing. Además, se podría aumentar la base de datos (por ejemplo, con la librería faker se poodría hacer una tabla de clientes que nos serviría para hacer clusterings).
