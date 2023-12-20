@@ -39,7 +39,7 @@ adaptabilidad a las preferencias y necesidades de sus clientes.
 En este proyecto, se ha decidido crear las fuentes de datos desde 0. Para poder llevarlo a cabo se ha tenido que realizar un estudio previo de la empresa estudiando sus ingresos anuales, la variación de los precios a lo largo de los años, el precio de sus productos, etc.
 
 #### 2.1 Recopilación de precios y productos 
-Lo primero que se realizó fue realizar una recopilación de los precios y productos de forma manual en un establecimiento en Madrid. Esto se llevo a cabo de forma manual ya que comprobamos que la variación de precios y productos disponibles en Uber Eats, Glovo e inclusive, su propia página web, divergía mucho en cuanto a lo ofrecido en los establecimientos. 
+Lo primero que se realizó fue realizar una recopilación de los precios y productos de forma manual en un establecimiento en Madrid. Se llevó a cabo este método ya que comprobamos que la variación de precios y productos disponibles en Uber Eats, Glovo e inclusive, su propia página web, divergía mucho en cuanto a lo ofrecido en los establecimientos. 
 
 #### 2.2 Parámetros de dispersión para contextualizar los datos 
 Para poder llevar a cabo una contextualización de los datos lo primeró que se hizo fue calcular una estacionalidad, tanto anual, como mensual.
