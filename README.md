@@ -1,7 +1,7 @@
 #  Analysis_burgerking
 ![](https://github.com/Lidiavf1912/analysis_burgerking/blob/main/imagenes/logo_burgerking.png)
 
-En este proyecto se va a llevar a cabo un estudio estratégico sobre las ventas de Burger King. Se desempeña un proceso completo de los datos comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos estructurada con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
+En este proyecto se va a llevar a cabo un estudio estratégico sobre las ventas de Burger King (todo el estudio es simulado con datos ficticios). Se desempeña un proceso completo de los datos comenzando desde la creación de las fuentes, su preparación para realizar el almacenamiento de los datos, la creación de una base de datos relacional con MySQLWorbench y finalizando con la explotación de los datos creando una visualización en PowerBI.
 
 ## Indice
 1.[Contexto](#Contexto)\
@@ -30,7 +30,7 @@ brownies, frutas, yogures…
 Por otra parte, esta cadena cuenta con alrededor de 900 restaurantes distribuidos en toda
 España, brindando múltiples formas de servicio. Ofrecen servicio en el establecimiento para aquellos
 que desean disfrutar de la experiencia en el local. La opción para llevar está disponible, incluyendo el
-servicio de King auto para aquellos que prefieren llevar la comida en el coche. Además, la empresa se
+servicio de King auto para aquellos que prefieren recoger la comida desde el coche. Además, la empresa se
 adapta a la era moderna con un servicio a domicilio eficiente, gracias a su colaboración con riders.
 Este enfoque integral destaca el compromiso de Burger King con la calidad, la variedad y la
 adaptabilidad a las preferencias y necesidades de sus clientes.
